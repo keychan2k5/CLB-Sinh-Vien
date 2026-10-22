@@ -70,3 +70,44 @@
   - 3a. Chưa có ai đăng ký sự kiện → Hệ thống thông báo "Chưa có thành viên đăng ký" và không cho phép điểm danh.
   - 3b. Mất kết nối mạng khi lưu → Hệ thống báo lỗi "Lưu thất bại, vui lòng kiểm tra kết nối" và giữ nguyên thông tin trên màn hình để lưu lại.
 - **Kết quả (điều kiện sau):** Dữ liệu điểm danh của sự kiện được lưu thành công.
+
+
+# Use Cases
+
+## Admin
+1. **Quản lý người dùng**
+   - Tạo, sửa, xóa tài khoản người dùng.
+   - Gán vai trò (Admin, Chủ nhiệm, Thành viên).
+2. **Quản lý toàn bộ câu lạc bộ**
+   - Tạo, sửa, xóa CLB bất kỳ.
+   - Xem báo cáo tổng quan toàn hệ thống (thu chi, số lượng thành viên, sự kiện).
+3. **Quản lý sao lưu & khôi phục dữ liệu**
+   - Thực hiện backup MySQL hàng ngày.
+   - Khôi phục dữ liệu khi cần.
+
+## Chủ nhiệm CLB
+1. **Quản lý CLB của mình**
+   - Tạo, sửa, xóa thông tin CLB.
+   - Quản lý danh sách thành viên, duyệt đơn xin gia nhập.
+2. **Quản lý sự kiện**
+   - Tạo, sửa, xóa sự kiện thuộc CLB.
+   - Mở/đóng đăng ký, giới hạn số người tham gia.
+3. **Điểm danh & thu chi**
+   - Ghi nhận điểm danh cho thành viên trong sự kiện.
+   - Nhập, sửa, xóa giao dịch thu/chi liên quan tới CLB.
+4. **Báo cáo**
+   - Xem báo cáo thống kê thành viên, sự kiện, thu chi cho CLB.
+
+## Thành viên
+1. **Đăng ký gia nhập CLB**
+   - Gửi đơn xin gia nhập.
+   - Xem trạng thái đơn (đang chờ, được duyệt, bị từ chối).
+2. **Tham gia sự kiện**
+   - Đăng ký tham gia sự kiện khi còn mở.
+   - Hủy đăng ký nếu chưa đóng.
+3. **Điểm danh**
+   - Xem danh sách điểm danh của mình cho các sự kiện đã tham gia.
+4. **Quản lý hồ sơ cá nhân**
+   - Cập nhật thông tin cá nhân, đổi mật khẩu.
+5. **Xem báo cáo cá nhân**
+   - Xem lịch sử tham gia sự kiện và giao dịch tài chính cá nhân.
